@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.sec{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:rgba(0, 0,https://www.facebook.com/TriumphMotorcyclesGlobal/ 0, 0.535) url(1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-blend-mode: darken ;
+}
+.sec .cont{
+    max-width: 700px;
+    text-align: center;
+
+}
+.sec .cont h2 {
+    font-size: 36px;
+    font-weight: 1000;
+    color: aliceblue;
+}
+.sec .cont p{
+    font-weight: 400;
+    color: white;
+}
+.container {
+    width: 100%;
+    display: flex;
+    padding-left: auto;
+    justify-content: left;
+    align-items: center;
+
+}
+.container .contact{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contact .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+.container .contact .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contact .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 400;
+}
+.container .contact .box .text h3 {
+    font-weight: 500;
+    color: aqua ;
+    
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: white;
+}
+.contactform h2{
+    font-size: 32px;
+    color: black;
+    font-weight: 700;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 14px;
+    margin: 5px 0;
+    border: 0.5px solid rgb(135, 135, 240);
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 14px;
+    margin: 5px 0;
+    pointer-events: none;
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    color: black;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    color: rgba(242, 0, 255, 0.837);
+    font-size: 12px;
+    transform: translateY( -20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100%;
+    background-color: rgba(0, 217, 255, 0.844);
+    color: black;
+    border:none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+@media (max-width:991px){
+    .cont{
+        padding: 50%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contact{
+        margin-bottom: 40px ;
+    }
+    .container .contact,
+    .contactform{
+        width: 100%;
+    }
+}
+
+
